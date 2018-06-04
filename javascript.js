@@ -85,37 +85,37 @@ const previousJob3 = Object.create({}, {
 
 // challenge
 let JobMaker = (jobNumber, theBusiness, employmentStartDate, employmentEndDate, theThingsILiked, theThingsIHated) => {
-    let job = `const ${jobNumber} = Object.create({}, {
+    const jobThing = Object.create({}, {
         businessName: {
             enumerable: true,
             writable: true,
-            value: ${theBusiness}
+            value: theBusiness
         },
         employmentStartDate: {
             enumerable: true,
             writable: true,
-            value: ${employmentStartDate}
+            value: employmentStartDate
         },
         employmentEndDate: {
             enumerable: true,
             writable: true,
-            value: ${employmentEndDate}
+            value: employmentEndDate
         },
         thingsILiked: {
             enumerable: true,
             writable: true,
-            value: ${theThingsILiked}
+            value: theThingsILiked
         },
         thingsIHated: {
             enumerable: true,
             writable: true,
-            value: ${theThingsIHated}
+            value: theThingsIHated
         }
-    })`
-    return job
+    })
+    return jobThing
 }
 let theJobMaker = JobMaker('job1', 'HMBTE', '01-19-10', '2-2-12', 'Some cool dogs', 'The boss was an angry dog')
-// console.log(theJobMaker)
+console.log(theJobMaker)
 
 // advanced challenge
 
